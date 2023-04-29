@@ -7,105 +7,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Changa+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Changa+One&family=Inter&family=Raleway:wght@100&display=swap');
 
-.hero-index{
+.hero-index {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
 
-header{
-    grid-area: header;    
+header {
+    grid-area: header;
     width: 100%;
     background-color: #BDCDD6;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: 10px;
     justify-content: space-around;
     align-items: center;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar li a {
     text-decoration: none;
-    color: black;    
+    color: black;
 }
-.logo{
+
+.logo {
     display: flex;
     width: 350px;
 }
 
-main{
+main {
     grid-area: main;
 }
 
-.section-principal{
+.section-principal {
     width: 95%;
     margin: auto;
     padding-top: 20px;
     /* padding-left: 25px; */
-    
+
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'Inter', sans-serif;
     flex-flow: row wrap;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.parrafo{
+.parrafo {
     text-align: center;
     font-family: 'Inter', sans-serif;
     flex-flow: row wrap;
     padding-top: 20px;
-    
+
 }
-.imagen2{
+
+.imagen2 {
     width: 300px;
     padding-top: 20px;
 }
 
-.imagen3{
+.imagen3 {
     width: 300px;
     padding-top: 20px;
 }
 
-.imagen4{
+.imagen4 {
     width: 300px;
     padding-top: 20px;
 }
 
-.imagen5{
+.imagen5 {
     width: 300px;
     padding-top: 20px;
 }
 
-.img2{
-    text-align: center;
-}
-.img3{
+.img2 {
     text-align: center;
 }
 
-.img4{
+.img3 {
     text-align: center;
 }
 
-.img5{
+.img4 {
     text-align: center;
 }
 
-footer{
+.img5 {
+    text-align: center;
+}
+
+footer {
     display: flex;
     position: static;
     margin-bottom: 0;
@@ -119,6 +123,7 @@ footer{
     padding-bottom: 0px;
     bottom: 0;
     color: black;
+
 }
 
 .facebook {
@@ -175,70 +180,72 @@ footer{
 
 
 
-@media(min-width:768px){
+@media(min-width:768px) {
 
-    .navbar{
+    .navbar {
         display: flex;
         flex-direction: row;
         gap: 5px;
     }
 
-    .main-index{
+    .main-index {
         display: grid;
         width: 100%;
         height: auto;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 275px auto auto;
-        grid-template-areas: 
-        "texto texto"        
-        "img2 img3"
-        "img4 img5"
+        grid-template-areas:
+            "texto texto"
+            "img2 img3"
+            "img4 img5"
         ;
     }
 
-    .section-principal{
+    .section-principal {
         grid-area: texto;
     }
 
-    .img2{
+    .img2 {
         grid-area: img2;
     }
-    .img3{
+
+    .img3 {
         grid-area: img3;
     }
 
-    .img4{
+    .img4 {
         grid-area: img4;
     }
-    .img5{
+
+    .img5 {
         grid-area: img5;
     }
-    
-    .imagen2{
+
+    .imagen2 {
         width: 350px;
         height: 250px;
         margin-left: 25px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
-    
-    .imagen3{
+
+    .imagen3 {
         width: 350px;
         height: 250px;
         margin-left: 15px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
-    
-    .imagen4{
+
+    .imagen4 {
         width: 350px;
         height: 250px;
         margin-left: 25px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
-    
-    .imagen5{
+
+    .imagen5 {
         width: 350px;
         height: 250px;
         margin-left: 15px;
@@ -249,88 +256,66 @@ footer{
     .facebook {
         width: 35px;
         position: relative;
-        left: 150px;
-        top: 10px;
+        left: 110px;
+        top: 33px;
     }
-    
+
     .instagram {
         width: 35px;
         position: relative;
         left: 131px;
         top: 33px;
     }
-    
+
     .whatsapp {
         width: 35px;
         position: relative;
-        left: 112px;
-        top: 55px
+        left: 152px;
+        top: 33px
     }
-    
+
     .telefono {
-        width: 25px;
-        position: relative;
+
         top: 25px;
         left: 100px;
     }
-    
+
     .correo {
-        width: 25px;
-        position: relative;
+
         top: 68px;
         left: 73px;
-    
+
     }
-    
+
     .ubicacion {
-        width: 25px;
-        position: relative;
+
         top: 110px;
         left: 43px;
     }
-    
+
     .textofooter {
-        font-family: 'Raleway', sans-serif;
-        position: relative;
         left: 150px;
         top: 5px;
-        line-height: 25px;
         font-size: 16px;
     }
 }
 
-@media(min-width:1024px){
+@media(min-width:1024px) {
 
-    .navbar{
+    .navbar {
         display: flex;
         flex-direction: row;
     }
 
-    .imagen2{
+    .imagen2 {
         width: 450px;
         height: 300px;
         margin-left: 25px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
-    
-    .imagen3{
-        width: 450px;
-        height: 300px;
-        margin-left: -15px;
-        /* margin-left: 50px;
-        padding-top: 20px; */
-    }
-    
-    .imagen4{
-        width: 450px;
-        height: 300px;
-        margin-left: 25px;
-        /* margin-left: 50px;
-        padding-top: 20px; */
-    }
-    
-    .imagen5{
+
+    .imagen3 {
         width: 450px;
         height: 300px;
         margin-left: -15px;
@@ -338,39 +323,98 @@ footer{
         padding-top: 20px; */
     }
 
-.facebook {
-    left: 150px;
-    top: 10px;
+    .imagen4 {
+        width: 450px;
+        height: 300px;
+        margin-left: 25px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+    .imagen5 {
+        width: 450px;
+        height: 300px;
+        margin-left: -15px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+    .facebook {
+        left: 200px;
+        top: 33px;
+    }
+
+    .instagram {
+        left: 221px;
+        top: 33px;
+    }
+
+    .whatsapp {
+        left: 242px;
+        top: 33px
+    }
+
+    .telefono {
+        top: 25px;
+        left: 130px;
+    }
+
+    .correo {
+        top: 68px;
+        left: 103px;
+
+    }
+
+    .ubicacion {
+        top: 110px;
+        left: 73px;
+    }
+
+    .textofooter {
+        left: 200px;
+        top: 5px;
+    }
 }
 
-.instagram {
-    left: 131px;
-    top: 33px;
-}
+@media(min-width:1440px) {
+    h1 {
+        font-size: 50px;
+    }
 
-.whatsapp {
-    left: 112px;
-    top: 55px
-}
+    .parrafo {
+        font-size: 20px;
+    }
 
-.telefono {
-    top: 25px;
-    left: 100px;
-}
+    .imagen2 {
+        width: 600px;
+        height: 450px;
+    }
 
-.correo {
-    top: 68px;
-    left: 73px;
+    .imagen3 {
+        width: 600px;
+        height: 450px;
+    }
 
-}
+    .imagen4 {
+        width: 600px;
+        height: 450px;
+    }
 
-.ubicacion {
-    top: 110px;
-    left: 43px;
-}
+    .imagen5 {
+        width: 600px;
+        height: 450px;
+    }
+    .facebook{
+        width: 45px;
+        left: 251px;
+    }
 
-.textofooter {
-    left: 150px;
-    top: 5px;
-}
+    .instagram{
+        width: 45px;
+        left: 271px;
+    }
+    .whatsapp{
+        width: 45px;
+        left: 291px;
+    }
 }
