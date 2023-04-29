@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Changa+One&family=Inter&family=Raleway:wght@100&display=swap');
+
 .hero-index{
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto 80% 10%;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
     "header"
     "main"
@@ -26,7 +29,7 @@ header{
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-around;
     align-items: center;
     text-transform:uppercase;
@@ -38,7 +41,7 @@ header{
 }
 .logo{
     display: flex;
-    margin: auto;
+    
 }
 
 main{
@@ -47,60 +50,126 @@ main{
 
 .section-principal{
     width: 95%;
+    padding-top: 20px;
     padding-left: 25px;
     
 }
 
 h1{
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    flex-flow: row wrap;
+    text-transform:uppercase;
 }
 
 .parrafo{
     text-align: center;
+    font-family: 'Inter', sans-serif;
+    flex-flow: row wrap;
+    padding-top: 20px;
+    
 }
 
 .imagen1{
     width: 350px;
-    margin-left: 35px;
+    margin-left: 50px;
     padding-top: 20px;
 }
 
 .imagen2{
     width: 350px;
-    margin-left: 35px;
+    margin-left: 50px;
     padding-top: 20px;
 }
 
 .imagen3{
     width: 350px;
-    margin-left: 35px;
+    margin-left: 50px;
     padding-top: 20px;
 }
 
 .imagen4{
     width: 350px;
-    margin-left: 35px;
+    margin-left: 50px;
     padding-top: 20px;
 }
 
 .imagen5{
     width: 350px;
-    margin-left: 35px;
+    margin-left: 50px;
     padding-top: 20px;
 }
 
 footer{
     display: flex;
-    position: relative;
+    position: static;
     margin-bottom: 0;
     grid-area: footer;
     background-color: #4D4D4D;
-    height: 200px;
+    height: 220px;
     width: 100%;
     display: flex;
     align-self: flex-end;
+    margin-top: 20px;
     padding-bottom: 0px;
     bottom: 0;
     color: white;
+}
+
+.facebook {
+    width: 35px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.instagram {
+    width: 35px;
+    position: relative;
+    left: 31px;
+    top: 45px;
+}
+
+.whatsapp {
+    width: 35px;
+    position: relative;
+    left: 12px;
+    top: 70px
+}
+
+.telefono {
+    width: 25px;
+    position: relative;
+    top: 45px;
+    left: 10px;
+}
+
+.correo {
+    width: 25px;
+    position: relative;
+    top: 92px;
+    left: -17px;
+
+}
+
+.ubicacion {
+    width: 25px;
+    position: relative;
+    top: 135px;
+    left: -47px;
+}
+
+.textofooter {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    left: 50px;
+    top: 25px;
+    line-height: 25px;
+}
+
+
+
+@media(min-width:768px){
+   
 }
 
