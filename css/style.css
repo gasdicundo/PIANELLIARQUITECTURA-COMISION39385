@@ -22,7 +22,7 @@
 header{
     grid-area: header;    
     width: 100%;
-    background-color: darkgrey;
+    background-color: #BDCDD6;
 }
 
 .navbar{
@@ -105,7 +105,7 @@ footer{
     position: static;
     margin-bottom: 0;
     grid-area: footer;
-    background-color: #4D4D4D;
+    background-color: #8b8b8b;
     height: 220px;
     width: 100%;
     display: flex;
@@ -113,7 +113,7 @@ footer{
     margin-top: 20px;
     padding-bottom: 0px;
     bottom: 0;
-    color: white;
+    color: black;
 }
 
 .facebook {
@@ -170,6 +170,74 @@ footer{
 
 
 @media(min-width:768px){
-   
+
+    .main-index{
+        display: grid;
+        width: 100%;
+        height: auto;
+        /* margin-left: -10px; */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 275px auto auto auto;
+        grid-template-areas: 
+        "texto texto"
+        "img1 img1"
+        "img2 img3"
+        "img4 img5"
+        ;
+    }
+
+    .section-principal{
+        grid-area: texto;
+    }
+
+    .img1{
+        grid-area: img1;
+        margin: auto;
+    }
+
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+
+    .img4{
+        grid-area: img4;
+    }
+    .img5{
+        grid-area: img5;
+    }
+
+    .imagen1{
+
+        width: 250px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen2{
+        width: 300px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen3{
+        width: 300px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen4{
+        width: 300px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen5{
+        width: 300px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
 }
 
