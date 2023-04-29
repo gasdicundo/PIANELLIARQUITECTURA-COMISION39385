@@ -41,7 +41,7 @@ header{
 }
 .logo{
     display: flex;
-    
+    width: 350px;
 }
 
 main{
@@ -50,8 +50,9 @@ main{
 
 .section-principal{
     width: 95%;
+    margin: auto;
     padding-top: 20px;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     
 }
 
@@ -69,35 +70,39 @@ h1{
     padding-top: 20px;
     
 }
-
-.imagen1{
-    width: 350px;
-    margin-left: 50px;
-    padding-top: 20px;
-}
-
 .imagen2{
-    width: 350px;
-    margin-left: 50px;
+    width: 300px;
     padding-top: 20px;
 }
 
 .imagen3{
-    width: 350px;
-    margin-left: 50px;
+    width: 300px;
     padding-top: 20px;
 }
 
 .imagen4{
-    width: 350px;
-    margin-left: 50px;
+    width: 300px;
     padding-top: 20px;
 }
 
 .imagen5{
-    width: 350px;
-    margin-left: 50px;
+    width: 300px;
     padding-top: 20px;
+}
+
+.img2{
+    text-align: center;
+}
+.img3{
+    text-align: center;
+}
+
+.img4{
+    text-align: center;
+}
+
+.img5{
+    text-align: center;
 }
 
 footer{
@@ -106,7 +111,7 @@ footer{
     margin-bottom: 0;
     grid-area: footer;
     background-color: #8b8b8b;
-    height: 220px;
+    height: 150px;
     width: 100%;
     display: flex;
     align-self: flex-end;
@@ -117,70 +122,75 @@ footer{
 }
 
 .facebook {
-    width: 35px;
+    width: 25px;
     position: relative;
-    left: 50px;
-    top: 20px;
+    left: 51px;
+    top: 15px;
 }
 
 .instagram {
-    width: 35px;
+    width: 25px;
     position: relative;
-    left: 31px;
-    top: 45px;
+    left: 36px;
+    top: 35px;
 }
 
 .whatsapp {
-    width: 35px;
+    width: 25px;
     position: relative;
-    left: 12px;
-    top: 70px
+    left: 22px;
+    top: 55px
 }
 
 .telefono {
     width: 25px;
     position: relative;
-    top: 45px;
-    left: 10px;
+    top: 30px;
+    left: 40px;
 }
 
 .correo {
     width: 25px;
     position: relative;
-    top: 92px;
-    left: -17px;
+    top: 70px;
+    left: 13px;
 
 }
 
 .ubicacion {
     width: 25px;
     position: relative;
-    top: 135px;
-    left: -47px;
+    top: 110px;
+    left: -17px;
 }
 
 .textofooter {
     font-family: 'Raleway', sans-serif;
     position: relative;
-    left: 50px;
-    top: 25px;
+    left: 75px;
+    top: 5px;
     line-height: 25px;
+    font-size: 12px;
 }
 
 
 
 @media(min-width:768px){
 
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
     .main-index{
         display: grid;
         width: 100%;
         height: auto;
-        /* margin-left: -10px; */
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 275px auto auto auto;
+        grid-template-rows: 275px auto auto;
         grid-template-areas: 
-        "texto texto"
-        "img1 img1"
+        "texto texto"        
         "img2 img3"
         "img4 img5"
         ;
@@ -188,11 +198,6 @@ footer{
 
     .section-principal{
         grid-area: texto;
-    }
-
-    .img1{
-        grid-area: img1;
-        margin: auto;
     }
 
     .img2{
@@ -208,36 +213,164 @@ footer{
     .img5{
         grid-area: img5;
     }
-
-    .imagen1{
-
-        width: 250px;
-        /* margin-left: 50px;
-        padding-top: 20px; */
-    }
     
     .imagen2{
-        width: 300px;
+        width: 350px;
+        height: 250px;
+        margin-left: 25px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
     
     .imagen3{
-        width: 300px;
+        width: 350px;
+        height: 250px;
+        margin-left: 15px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
     
     .imagen4{
-        width: 300px;
+        width: 350px;
+        height: 250px;
+        margin-left: 25px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
     
     .imagen5{
-        width: 300px;
+        width: 350px;
+        height: 250px;
+        margin-left: 15px;
         /* margin-left: 50px;
         padding-top: 20px; */
     }
+
+    .facebook {
+        width: 35px;
+        position: relative;
+        left: 150px;
+        top: 10px;
+    }
+    
+    .instagram {
+        width: 35px;
+        position: relative;
+        left: 131px;
+        top: 33px;
+    }
+    
+    .whatsapp {
+        width: 35px;
+        position: relative;
+        left: 112px;
+        top: 55px
+    }
+    
+    .telefono {
+        width: 25px;
+        position: relative;
+        top: 25px;
+        left: 100px;
+    }
+    
+    .correo {
+        width: 25px;
+        position: relative;
+        top: 68px;
+        left: 73px;
+    
+    }
+    
+    .ubicacion {
+        width: 25px;
+        position: relative;
+        top: 110px;
+        left: 43px;
+    }
+    
+    .textofooter {
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        left: 150px;
+        top: 5px;
+        line-height: 25px;
+        font-size: 16px;
+    }
 }
 
+@media(min-width:1024px){
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagen2{
+        width: 450px;
+        height: 300px;
+        margin-left: 25px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen3{
+        width: 450px;
+        height: 300px;
+        margin-left: -15px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen4{
+        width: 450px;
+        height: 300px;
+        margin-left: 25px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    
+    .imagen5{
+        width: 450px;
+        height: 300px;
+        margin-left: -15px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+.facebook {
+    left: 150px;
+    top: 10px;
+}
+
+.instagram {
+    left: 131px;
+    top: 33px;
+}
+
+.whatsapp {
+    left: 112px;
+    top: 55px
+}
+
+.telefono {
+    top: 25px;
+    left: 100px;
+}
+
+.correo {
+    top: 68px;
+    left: 73px;
+
+}
+
+.ubicacion {
+    top: 110px;
+    left: 43px;
+}
+
+.textofooter {
+    left: 150px;
+    top: 5px;
+}
+}
