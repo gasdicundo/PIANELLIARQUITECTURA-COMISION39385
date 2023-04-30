@@ -440,6 +440,10 @@ footer {
         font-size: 80px;
     }
 
+    .navbar {
+        font-size: 20px;
+    }
+
     .parrafo {
         font-size: 40px;
     }
@@ -456,23 +460,68 @@ footer {
 
     .imagen2 {
         width: 1200px;
-        height: 1050px;
+        height: 1000px;
     }
 
     .imagen3 {
         width: 1200px;
-        height: 1050px;
+        height: 1000px;
     }
 
     .imagen4 {
         width: 1200px;
-        height: 1050px;
+        height: 1000px;
     }
 
     .imagen5 {
         width: 1200px;
-        height: 1050px;
+        height: 1000px;
     }
 
+    .facebook{
+        width: 55px;
+        left: 751px;
+        top: 10px;
+    }
+
+    .instagram{
+        width: 55px;
+        left: 771px;
+        top: 10px;
+    }
+    .whatsapp{
+        width: 55px;
+        left: 791px;
+        top: 10px;
+    }
     
+    .logo-cp{
+        width: 200px;
+        left: 630px;
+        top: 10px;
+    }
+    .textofooter {
+        left: 200px;
+        top: -3px;
+        font-size: 20px;
+    }
+
+    .telefono {
+        width: 35px;
+        top: 25px;
+        left: 130px;
+    }
+
+    .correo {
+        width: 35px;
+        top: 68px;
+        left: 95px;
+
+    }
+
+    .ubicacion {
+        width: 35px;
+        top: 110px;
+        left: 50px;
+    }
 }
