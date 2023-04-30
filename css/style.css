@@ -126,56 +126,62 @@ footer {
 
 }
 
+.logo-cp{
+    width: 0%;
+    position: relative;
+    left: 25px;
+}
 .facebook {
     width: 25px;
     position: relative;
-    left: 51px;
+    left: 61px;
     top: 15px;
 }
 
 .instagram {
     width: 25px;
     position: relative;
-    left: 36px;
+    left: 46px;
     top: 35px;
 }
 
 .whatsapp {
     width: 25px;
     position: relative;
-    left: 22px;
+    left: 32px;
     top: 55px
 }
 
 .telefono {
     width: 25px;
     position: relative;
-    top: 30px;
-    left: 40px;
+    top: 20px;
+    left: 20px;
 }
 
 .correo {
     width: 25px;
     position: relative;
-    top: 70px;
-    left: 13px;
+    top: 58px;
+    left: -7px;
 
 }
 
 .ubicacion {
     width: 25px;
     position: relative;
-    top: 110px;
-    left: -17px;
+    top: 100px;
+    left: -37px;
 }
 
 .textofooter {
     font-family: 'Raleway', sans-serif;
     position: relative;
-    left: 75px;
-    top: 5px;
-    line-height: 25px;
-    font-size: 12px;
+    left: 55px;
+    top: 0px;
+    line-height: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
 }
 
 
@@ -186,6 +192,7 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 5px;
+        font-size: 14PX;
     }
 
     .main-index {
@@ -296,15 +303,15 @@ footer {
     .textofooter {
         left: 150px;
         top: 5px;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 25px;
     }
 }
 
 @media(min-width:1024px) {
 
     .navbar {
-        display: flex;
-        flex-direction: row;
+        font-size: 16px;
     }
 
     .imagen2 {
@@ -406,15 +413,66 @@ footer {
     }
     .facebook{
         width: 45px;
-        left: 251px;
+        left: 351px;
+        top: 20px;
     }
 
     .instagram{
         width: 45px;
-        left: 271px;
+        left: 371px;
+        top: 20px;
     }
     .whatsapp{
         width: 45px;
-        left: 291px;
+        left: 391px;
+        top: 20px;
     }
+    
+    .logo-cp{
+        width: 150px;
+        left: 250px;
+        top: 30px;
+    }
+}
+
+@media(min-width:2560px){
+    h1 {
+        font-size: 80px;
+    }
+
+    .parrafo {
+        font-size: 40px;
+    }
+
+    .main-index {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px auto auto;
+        grid-template-areas:
+            "texto texto"
+            "img2 img3"
+            "img4 img5"
+        ;
+    }
+
+    .imagen2 {
+        width: 1200px;
+        height: 1050px;
+    }
+
+    .imagen3 {
+        width: 1200px;
+        height: 1050px;
+    }
+
+    .imagen4 {
+        width: 1200px;
+        height: 1050px;
+    }
+
+    .imagen5 {
+        width: 1200px;
+        height: 1050px;
+    }
+
+    
 }
