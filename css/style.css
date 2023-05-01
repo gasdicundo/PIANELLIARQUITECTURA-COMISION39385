@@ -42,7 +42,7 @@ header {
 
 .logo {
     display: flex;
-    width: 350px;
+    width: 300px;
 }
 
 main {
@@ -268,7 +268,63 @@ footer {
         text-transform: uppercase;
         
     }
+    .hero-nosotros{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
 
+    .index-nosotros{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "titulo"
+        "nosotros1"
+        "nosotros2"
+        ;
+    }
+
+    .nosotros{
+        grid-area: titulo;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .nosotros1{
+        grid-area: nosotros1;
+    }
+
+    .nosotros2{
+        grid-area: nosotros2;
+    }
+    .mujer{
+        display: flex;
+        width: 250px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .hombre{
+        width: 300px;
+    }
+
+    .biografia{
+        display: flex;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .arquitecto{
+        padding-top: 20px;
+            }
 @media(min-width:768px) {
 
     .navbar {
@@ -516,6 +572,15 @@ footer {
         left: 250px;
         top: 30px;
     }
+
+    .nosotros1{
+        display: flex;
+        flex-direction: row;
+    }
+        .nosotros2{
+            display: flex;
+        flex-direction: row;
+    }
 }
 
 @media(min-width:2560px){
@@ -607,4 +672,28 @@ footer {
         top: 110px;
         left: 50px;
     }
+
+    .mujer{
+        width: 350px;
+    }
+    
+    .hombre{
+        width: 400px;
+    }
+
+    .arquitecto{
+        font-size: 30px;
+    }
+
+    .biografia{
+        font-size: 25px;
+    }
+
+    .nosotros1{
+        gap: 150px;
+    }
+    .nosotros2{
+        gap: 150px;
+    }
 }
+
