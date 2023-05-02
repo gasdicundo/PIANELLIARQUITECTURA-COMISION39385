@@ -564,6 +564,14 @@ footer {
         align-items: center;
         justify-content: center;
     }
+    .nosotros1{
+        display: flex;
+        flex-direction: row;
+    }
+        .nosotros2{
+            display: flex;
+        flex-direction: row;
+    }
 }
 
 @media(min-width:1440px) {
@@ -632,6 +640,17 @@ footer {
         padding-top: 20px;
         
         
+    }
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    .arquitectura{
+        font-size: 20px;
     }
 }
 
