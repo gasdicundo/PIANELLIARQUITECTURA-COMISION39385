@@ -1,0 +1,27 @@
+header {
+    grid-area: header;
+    width: 100%;
+    background-color: #BDCDD6;
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    width: 300px;
+}
+ 

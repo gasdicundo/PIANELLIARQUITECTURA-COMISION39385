@@ -1,0 +1,73 @@
+footer {
+    display: flex;
+    position: static;
+    margin-bottom: 0;
+    grid-area: footer;
+    background-color: #8b8b8b;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    bottom: 0;
+    color: black;
+    font-weight: bold;
+
+    .logo-cp{
+    width: 0%;
+    position: relative;
+    left: 25px;
+    }
+    .facebook {
+    width: 25px;
+    position: relative;
+    left: 61px;
+    top: 15px;
+    }
+
+    .instagram {
+    width: 25px;
+    position: relative;
+    left: 46px;
+    top: 35px;
+    }
+
+    .whatsapp {
+    width: 25px;
+    position: relative;
+    left: 32px;
+    top: 55px
+    }
+
+    .telefono {
+    width: 25px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    }
+
+    .correo {
+    width: 25px;
+    position: relative;
+    top: 58px;
+    left: -7px;
+    }
+
+    .ubicacion {
+    width: 25px;
+    position: relative;
+    top: 100px;
+    left: -37px;
+    }
+
+    .textofooter {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    left: 55px;
+    top: 0px;
+    line-height: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    }
+}

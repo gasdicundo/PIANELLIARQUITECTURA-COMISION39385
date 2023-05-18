@@ -1,0 +1,128 @@
+@media(min-width:768px) {
+    header{
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-size: 14PX;
+    }
+}
+    .main-index{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 275px auto auto;
+    grid-template-areas:
+        "texto texto"
+        "img2 img3"
+        "img4 img5"
+    ;}
+    main{          
+        .section-principal {
+        grid-area: texto;
+    }
+    div{
+        
+    .img2 {
+        grid-area: img2;
+    }
+    .img3 {
+        grid-area: img3;
+    }
+    .img4 {
+        grid-area: img4;
+    }
+    .img5 {
+        grid-area: img5;
+    }
+    
+    .imagen2 {
+        width: 350px;
+        height: 250px;
+        margin-left: 25px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+    .imagen3 {
+        width: 350px;
+        height: 250px;
+        margin-left: 15px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+    .imagen4 {
+        width: 350px;
+        height: 250px;
+        margin-left: 25px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+
+    .imagen5 {
+        width: 350px;
+        height: 250px;
+        margin-left: 15px;
+        /* margin-left: 50px;
+        padding-top: 20px; */
+    }
+    }
+    
+}
+    .main-proyectos{
+        padding-top: 50px;
+    
+    }
+
+    footer{
+
+    .facebook {
+        width: 35px;
+        position: relative;
+        left: 110px;
+        top: 33px;
+    }
+
+    .instagram {
+        width: 35px;
+        position: relative;
+        left: 131px;
+        top: 33px;
+    }
+
+    .whatsapp {
+        width: 35px;
+        position: relative;
+        left: 152px;
+        top: 33px
+    }
+
+    .telefono {
+
+        top: 25px;
+        left: 100px;
+    }
+
+    .correo {
+
+        top: 68px;
+        left: 73px;
+
+    }
+
+    .ubicacion {
+
+        top: 110px;
+        left: 43px;
+    }
+
+    .textofooter {
+        left: 150px;
+        top: 5px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    }
+}

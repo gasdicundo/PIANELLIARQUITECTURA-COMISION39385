@@ -1,0 +1,52 @@
+.hero-contacto{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+.contacto{
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.consulta{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    /* gap: 30px; */
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.texto{
+    height: 200px;
+    text-align:initial;
+}
+
+.boton1{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    
+}
+
+.boton2{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    
+}
