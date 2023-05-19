@@ -17,6 +17,16 @@ header {
             color: black;
             font-weight: bold;
         }
+        li a:hover{
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 4px 5px black;
+        }
+
+        li img:hover{
+            width: 350px;
+        }
+
     }
 }
 
@@ -24,4 +34,3 @@ header {
     display: flex;
     width: 300px;
 }
- 

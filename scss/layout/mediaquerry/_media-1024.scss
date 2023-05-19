@@ -1,9 +1,11 @@
 @media(min-width:1024px) {
-
+    header{
     .navbar {
         font-size: 16px;
     }
-
+}
+main{
+    div{
     .imagen2 {
         width: 450px;
         height: 300px;
@@ -35,22 +37,26 @@
         /* margin-left: 50px;
         padding-top: 20px; */
     }
-
+}
+}
+footer{
+    section{
     .facebook {
-        left: 200px;
-        top: 33px;
-    }
-
-    .instagram {
         left: 221px;
         top: 33px;
     }
 
-    .whatsapp {
+    .instagram {
         left: 242px;
+        top: 33px;
+    }
+
+    .whatsapp {
+        left: 263px;
         top: 33px
     }
 
+    
     .telefono {
         top: 25px;
         left: 130px;
@@ -62,6 +68,7 @@
 
     }
 
+    
     .ubicacion {
         top: 110px;
         left: 73px;
@@ -71,13 +78,20 @@
         left: 200px;
         top: 5px;
     }
-
+    }
+}
+main{
+    section{
     .proyectos {
         width: 300px;
         height: 250px;
         padding-top: 20px;
         
         
+    }
+    .proyectos:hover{
+        width: 350px;
+        height: 300px;
     }
 
     .card1{
@@ -94,6 +108,9 @@
         align-items: center;
         justify-content: center;
     }
+}
+}
+    main{
     .nosotros1{
         display: flex;
         flex-direction: row;
@@ -102,4 +119,4 @@
             display: flex;
         flex-direction: row;
     }
-}
+}}

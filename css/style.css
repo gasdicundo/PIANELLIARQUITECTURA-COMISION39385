@@ -35,16 +35,52 @@ main {
     padding-top: 20px; }
   main .imagen2 {
     width: 300px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
   main .imagen3 {
     width: 300px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
   main .imagen4 {
     width: 300px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
   main .imagen5 {
     width: 300px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
   main .img2 {
     text-align: center; }
   main .img3 {
@@ -53,6 +89,22 @@ main {
     text-align: center; }
   main .img5 {
     text-align: center; }
+
+.whatsapp1 {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100; }
+
+.whatsapp-icon {
+  margin-top: 13px; }
 
 main .hero-arquitectura {
   width: 100%;
@@ -85,7 +137,9 @@ main h3 {
 
 .contacto {
   padding-top: 100px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both; }
 
 .consulta {
   display: flex;
@@ -96,11 +150,119 @@ main h3 {
   width: 300px;
   margin: auto;
   padding-bottom: 40px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .texto {
   height: 200px;
-  text-align: initial; }
+  text-align: initial;
+  border-radius: 15px;
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both; }
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; } }
+
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1; }
+  24% {
+    opacity: 1; }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1; } }
+
+.texto:hover {
+  box-shadow: 5px 8px 10px black; }
+
+.texto2 {
+  height: 30px;
+  border-radius: 15px;
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both; }
+
+span {
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both; }
+
+.texto2:hover {
+  box-shadow: 5px 8px 10px black; }
 
 .boton1 {
   /* display: flex;
@@ -166,13 +328,39 @@ main h3 {
 .proyectos {
   width: 250px;
   height: 200px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .card1 {
   text-align: center; }
 
 .card2 {
   text-align: center; }
+
+@-webkit-keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1; } }
+
+@keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+    transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1; } }
+
+.proyectos:hover {
+  width: 300px;
+  height: 250px; }
 
 header {
   grid-area: header;
@@ -191,6 +379,12 @@ header {
       text-decoration: none;
       color: black;
       font-weight: bold; }
+    header .navbar li a:hover {
+      font-size: 20px;
+      color: white;
+      text-shadow: 2px 4px 5px black; }
+    header .navbar li img:hover {
+      width: 350px; }
 
 .logo {
   display: flex;
@@ -303,234 +497,270 @@ footer {
         padding-top: 20px; */ }
   .main-proyectos {
     padding-top: 50px; }
-  footer .facebook {
+  footer section .facebook {
     width: 35px;
     position: relative;
     left: 110px;
     top: 33px; }
-  footer .instagram {
+  footer section .facebook:hover {
+    width: 40px; }
+  footer section .instagram {
     width: 35px;
     position: relative;
     left: 131px;
     top: 33px; }
-  footer .whatsapp {
+  footer section .instagram:hover {
+    width: 40px; }
+  footer section .whatsapp {
     width: 35px;
     position: relative;
     left: 152px;
     top: 33px; }
-  footer .telefono {
+  footer section .whatsapp:hover {
+    width: 40px; }
+  footer section .telefono {
     top: 25px;
     left: 100px; }
-  footer .correo {
+  footer section .correo {
     top: 68px;
     left: 73px; }
-  footer .ubicacion {
+  footer section .ubicacion {
     top: 110px;
     left: 43px; }
-  footer .textofooter {
+  footer section .textofooter {
     left: 150px;
     top: 5px;
     font-size: 14px;
     line-height: 25px; } }
 
 @media (min-width: 1024px) {
-  .navbar {
+  header .navbar {
     font-size: 16px; }
-  .imagen2 {
+  main div .imagen2 {
     width: 450px;
     height: 300px;
     margin-left: 25px;
     /* margin-left: 50px;
         padding-top: 20px; */ }
-  .imagen3 {
+  main div .imagen3 {
     width: 450px;
     height: 300px;
     margin-left: -15px;
     /* margin-left: 50px;
         padding-top: 20px; */ }
-  .imagen4 {
+  main div .imagen4 {
     width: 450px;
     height: 300px;
     margin-left: 25px;
     /* margin-left: 50px;
         padding-top: 20px; */ }
-  .imagen5 {
+  main div .imagen5 {
     width: 450px;
     height: 300px;
     margin-left: -15px;
     /* margin-left: 50px;
         padding-top: 20px; */ }
-  .facebook {
-    left: 200px;
-    top: 33px; }
-  .instagram {
+  footer section .facebook {
     left: 221px;
     top: 33px; }
-  .whatsapp {
+  footer section .instagram {
     left: 242px;
     top: 33px; }
-  .telefono {
+  footer section .whatsapp {
+    left: 263px;
+    top: 33px; }
+  footer section .telefono {
     top: 25px;
     left: 130px; }
-  .correo {
+  footer section .correo {
     top: 68px;
     left: 103px; }
-  .ubicacion {
+  footer section .ubicacion {
     top: 110px;
     left: 73px; }
-  .textofooter {
+  footer section .textofooter {
     left: 200px;
     top: 5px; }
-  .proyectos {
+  main section .proyectos {
     width: 300px;
     height: 250px;
     padding-top: 20px; }
-  .card1 {
+  main section .proyectos:hover {
+    width: 350px;
+    height: 300px; }
+  main section .card1 {
     display: flex;
     gap: 50px;
     margin: auto;
     align-items: center;
     justify-content: center; }
-  .card2 {
+  main section .card2 {
     display: flex;
     gap: 50px;
     margin: auto;
     align-items: center;
     justify-content: center; }
-  .nosotros1 {
+  main .nosotros1 {
     display: flex;
     flex-direction: row; }
-  .nosotros2 {
+  main .nosotros2 {
     display: flex;
     flex-direction: row; } }
 
 @media (min-width: 1440px) {
-  h1 {
+  main h1 {
     font-size: 50px; }
-  .parrafo {
+  main .parrafo {
     font-size: 20px; }
-  .imagen2 {
+  main div .imagen2 {
     width: 600px;
     height: 450px; }
-  .imagen3 {
+  main div .imagen2:hover {
+    width: 650px;
+    height: 500px; }
+  main div .imagen3 {
     width: 600px;
     height: 450px; }
-  .imagen4 {
+  main div .imagen3:hover {
+    width: 650px;
+    height: 500px; }
+  main div .imagen4 {
     width: 600px;
     height: 450px; }
-  .imagen5 {
+  main div .imagen4:hover {
+    width: 650px;
+    height: 500px; }
+  main div .imagen5 {
     width: 600px;
     height: 450px; }
-  .facebook {
+  main div .imagen5:hover {
+    width: 650px;
+    height: 500px; }
+  footer section .facebook {
     width: 45px;
     left: 351px;
     top: 20px; }
-  .instagram {
+  footer section .facebook:hover {
+    width: 50px; }
+  footer section .instagram {
     width: 45px;
     left: 371px;
     top: 20px; }
-  .whatsapp {
+  footer section .instagram:hover {
+    width: 50px; }
+  footer section .whatsapp {
     width: 45px;
     left: 391px;
     top: 20px; }
-  .logo-cp {
+  footer section .whatsapp:hover {
+    width: 50px; }
+  footer section .logo-cp {
     width: 150px;
     left: 250px;
     top: 30px; }
-  .nosotros1 {
+  footer section .logo-cp:hover {
+    width: 175px; }
+  main .nosotros1 {
     display: flex;
     flex-direction: row; }
-  .nosotros2 {
+  main .nosotros2 {
     display: flex;
     flex-direction: row; }
-  .proyectos {
+  main section .proyectos {
     width: 400px;
-    height: 350px;
-    padding-top: 20px; }
-  h2 {
+    height: 350px; }
+  main section .proyectos:hover {
+    width: 450px;
+    height: 400px; }
+  main h2 {
     font-size: 40px; }
-  h3 {
+  main h3 {
     font-size: 30px; }
-  .arquitectura {
+  main section div .arquitectura {
     font-size: 20px; } }
 
 @media (min-width: 2560px) {
-  h1 {
+  main h1 {
     font-size: 80px; }
-  h2 {
+  main h2 {
     font-size: 65px; }
-  h3 {
+  main h3 {
     font-size: 50px; }
-  .arquitectura {
+  main .arquitectura {
     font-size: 40px; }
-  .navbar {
-    font-size: 20px; }
-  .parrafo {
+  header .navbar {
+    font-size: 22px; }
+    header .navbar li a:hover {
+      font-size: 26px; }
+  main .parrafo {
     font-size: 40px; }
   .main-index {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 400px auto auto;
     grid-template-areas: "texto texto" "img2 img3" "img4 img5"; }
-  .imagen2 {
+  main div .imagen2 {
     width: 1200px;
     height: 1000px; }
-  .imagen3 {
+  main div .imagen3 {
     width: 1200px;
     height: 1000px; }
-  .imagen4 {
+  main div .imagen4 {
     width: 1200px;
     height: 1000px; }
-  .imagen5 {
+  main div .imagen5 {
     width: 1200px;
     height: 1000px; }
-  .facebook {
-    width: 55px;
+  footer section .facebook {
+    width: 75px;
     left: 751px;
     top: 10px; }
-  .instagram {
-    width: 55px;
+  footer section .instagram {
+    width: 75px;
     left: 771px;
     top: 10px; }
-  .whatsapp {
-    width: 55px;
+  footer section .whatsapp {
+    width: 75px;
     left: 791px;
     top: 10px; }
-  .logo-cp {
+  footer section .logo-cp {
     width: 200px;
     left: 630px;
     top: 10px; }
-  .textofooter {
+  footer section .textofooter {
     left: 200px;
     top: -3px;
     font-size: 20px; }
-  .telefono {
+  footer section .telefono {
     width: 35px;
     top: 25px;
     left: 130px; }
-  .correo {
+  footer section .correo {
     width: 35px;
     top: 68px;
     left: 95px; }
-  .ubicacion {
+  footer section .ubicacion {
     width: 35px;
     top: 110px;
     left: 50px; }
-  .mujer {
-    width: 400px; }
-  .hombre {
-    width: 400px; }
-  .arquitecto {
+  main section div .mujer {
+    width: 500px; }
+  main section div .hombre {
+    width: 500px; }
+  main section div .arquitecto {
     font-size: 30px; }
-  .biografia {
+  main section div .biografia {
     font-size: 25px; }
-  .nosotros1 {
+  main .nosotros1 {
     gap: 150px; }
-  .nosotros2 {
+  main .nosotros2 {
     gap: 150px; }
-  .proyectos {
-    width: 600px;
-    height: 550px; }
-  .card1 {
+  main section .proyectos {
+    width: 700px;
+    height: 650px; }
+  main section .proyectos:hover {
+    width: 750px;
+    height: 600px; }
+  main section .card1 {
     gap: 120px; }
-  .card2 {
+  main section .card2 {
     gap: 120px; } }

@@ -1,4 +1,5 @@
 @media(min-width:2560px){
+    main{
     h1 {
         font-size: 80px;
     }
@@ -14,15 +15,20 @@
     .arquitectura{
         font-size: 40px;
     }
-
+}
+header{
     .navbar {
-        font-size: 20px;
+        font-size: 22px;
+        li a:hover{
+            font-size: 26px;
+        }
     }
-
+}
+main{
     .parrafo {
         font-size: 40px;
     }
-
+}
     .main-index {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 400px auto auto;
@@ -32,7 +38,8 @@
             "img4 img5"
         ;
     }
-
+main{
+    div{
     .imagen2 {
         width: 1200px;
         height: 1000px;
@@ -52,20 +59,22 @@
         width: 1200px;
         height: 1000px;
     }
-
+}}
+footer{
+    section{
     .facebook{
-        width: 55px;
+        width: 75px;
         left: 751px;
         top: 10px;
     }
 
     .instagram{
-        width: 55px;
+        width: 75px;
         left: 771px;
         top: 10px;
     }
     .whatsapp{
-        width: 55px;
+        width: 75px;
         left: 791px;
         top: 10px;
     }
@@ -98,14 +107,18 @@
         width: 35px;
         top: 110px;
         left: 50px;
-    }
+    }}
+}
 
+main{
+    section{
+        div{
     .mujer{
-        width: 400px;
+        width: 500px;
     }
     
     .hombre{
-        width: 400px;
+        width: 500px;
     }
 
     .arquitecto{
@@ -115,17 +128,24 @@
     .biografia{
         font-size: 25px;
     }
-
+    }}
     .nosotros1{
         gap: 150px;
     }
     .nosotros2{
         gap: 150px;
     }
-
+}
+main{
+    section{
     .proyectos {
-        width: 600px;
-        height: 550px;
+        width: 700px;
+        height: 650px;
+    }
+
+    .proyectos:hover{
+        width: 750px;
+        height: 600px;
     }
 
     .card1{
@@ -135,5 +155,5 @@
     .card2{
         gap: 120px;
     }
-}
+}}}
 

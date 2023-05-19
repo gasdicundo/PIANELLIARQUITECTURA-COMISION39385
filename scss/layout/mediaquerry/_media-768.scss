@@ -18,7 +18,8 @@
         "img2 img3"
         "img4 img5"
     ;}
-    main{          
+    main{  
+         
         .section-principal {
         grid-area: texto;
     }
@@ -77,12 +78,16 @@
     }
 
     footer{
-
+        section{
     .facebook {
         width: 35px;
         position: relative;
         left: 110px;
         top: 33px;
+    }
+
+    .facebook:hover{
+        width: 40px;
     }
 
     .instagram {
@@ -92,11 +97,19 @@
         top: 33px;
     }
 
+    .instagram:hover{
+        width: 40px;
+    }
+
     .whatsapp {
         width: 35px;
         position: relative;
         left: 152px;
         top: 33px
+    }
+
+    .whatsapp:hover{
+        width: 40px;
     }
 
     .telefono {
@@ -125,4 +138,4 @@
         line-height: 25px;
     }
     }
-}
+}}
