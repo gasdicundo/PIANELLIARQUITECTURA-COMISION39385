@@ -380,7 +380,7 @@ header {
     header nav .navbar2 img {
       width: 200px; }
     header nav .navbar2 img:hover {
-      width: 350px; }
+      width: 250px; }
   header nav div div {
     display: flex;
     align-items: center;
@@ -452,6 +452,8 @@ footer {
     font-size: 14PX; }
   header nav div .logo {
     width: 300px; }
+  header nav div .logo:hover {
+    width: 350px; }
   .main-index {
     display: grid;
     width: 100%;
