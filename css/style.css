@@ -242,7 +242,7 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
   transition: 0.3s ease all;
   left: 0%; }
 
-button {
+.button-contacto {
   background: #849dff;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #849dff, #7e7b7c);
@@ -360,29 +360,31 @@ header {
   grid-area: header;
   width: 100%;
   background-color: #BDCDD6; }
-  header .navbar {
+  header nav .navbar2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     list-style: none;
     gap: 10px;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif; }
-    header .navbar li a {
+    header nav .navbar2 a {
       text-decoration: none;
       color: black;
       font-weight: bold; }
-    header .navbar li a:hover {
+    header nav .navbar2 a:hover {
       font-size: 20px;
       color: white;
       text-shadow: 2px 4px 5px black; }
-    header .navbar li img:hover {
+    header nav .navbar2 img {
+      width: 200px; }
+    header nav .navbar2 img:hover {
       width: 350px; }
-
-.logo {
-  display: flex;
-  width: 300px; }
+  header nav div div {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
 
 footer {
   display: flex;
@@ -448,6 +450,8 @@ footer {
     flex-direction: row;
     gap: 5px;
     font-size: 14PX; }
+  header nav div .logo {
+    width: 300px; }
   .main-index {
     display: grid;
     width: 100%;
