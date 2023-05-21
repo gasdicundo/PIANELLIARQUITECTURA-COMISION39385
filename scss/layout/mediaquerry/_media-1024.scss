@@ -1,7 +1,19 @@
 @media(min-width:1024px) {
     header{
-    .navbar {
+    .navbar2 {
         font-size: 16px;
+    }
+    nav{
+        div{
+            div{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 70px;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
     }
 }
 main{

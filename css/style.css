@@ -532,8 +532,15 @@ footer {
     line-height: 25px; } }
 
 @media (min-width: 1024px) {
-  header .navbar {
+  header .navbar2 {
     font-size: 16px; }
+  header nav div div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-around;
+    align-items: center; }
   main div .imagen2 {
     width: 450px;
     height: 300px;
