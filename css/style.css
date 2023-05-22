@@ -89,6 +89,8 @@ main {
     text-align: center; }
   main .img5 {
     text-align: center; }
+  main div {
+    padding-bottom: 20px; }
 
 main .hero-arquitectura {
   width: 100%;
@@ -125,13 +127,13 @@ main h3 {
 .contacto {
   padding-top: 100px;
   padding-bottom: 40px;
-  -webkit-animation: bounce-top 0.9s both;
-  animation: bounce-top 0.9s both;
   width: 100%;
-  height: 650px;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background: #bdcdd6;
+  background: linear-gradient(180deg, #bdcdd6 35%, #8b8b8b 100%); }
 
 @keyframes bounce-top {
   0% {
@@ -182,7 +184,10 @@ form {
   width: 30%;
   padding: 10px 0;
   border-radius: 10px;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); }
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  border-color: black;
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both; }
 
 .form {
   width: 100%;
@@ -277,7 +282,7 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
 
 .hero-nosotros {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
@@ -392,7 +397,7 @@ footer {
   margin-bottom: 0;
   grid-area: footer;
   background-color: #8b8b8b;
-  height: 150px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-self: flex-end;
