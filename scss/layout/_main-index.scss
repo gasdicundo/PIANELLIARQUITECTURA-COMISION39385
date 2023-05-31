@@ -1,125 +1,116 @@
 .hero-index {
-    width: 100%;
-    height: 100vh;
-    @include grid(auto, auto auto auto, "header" "main" "footer");
+  width: 100%;
+  height: 100vh;
+  @include grid(auto, auto auto auto, "header" "main" "footer");
 }
 
 main {
-    grid-area: main;    
-    .section-principal {
+  grid-area: main;
+
+  .section-principal {
     width: 95%;
     margin: auto;
     padding-top: 20px;
     /* padding-left: 25px; */
-    }
+  }
 
-    h1 {
+  h1 {
     text-align: center;
     font-family: 'Inter', sans-serif;
     flex-flow: row wrap;
     text-transform: uppercase;
-    
-}
 
-    p{
+  }
+
+  p {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-}
+  }
 
-    .parrafo {
+  .parrafo {
     text-align: center;
     font-family: 'Inter', sans-serif;
     flex-flow: row wrap;
     padding-top: 20px;
 
-}
+  }
 
-    .imagen2 {
+  .imagen2 {
     box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
     width: 300px;
     border-radius: 10px;
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    }
+    animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
 
-    .imagen3 {
-      @extend .imagen2;
-    //   box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
-    // width: 300px;
-    // border-radius: 10px;
-    // -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	  //       animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
+  .imagen3 {
+    @extend .imagen2;
+  }
 
-    .imagen4 {
-      @extend .imagen2;
-    //   box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
-    // width: 300px;
-    // border-radius: 10px;
-    // -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	  //       animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
+  .imagen4 {
+    @extend .imagen2;
+  }
 
-    .imagen5 {
-      @extend .imagen2;
-      box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
-    // width: 300px;
-    // border-radius: 10px;
-    // -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	  //       animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-}
-@-webkit-keyframes puff-in-center {
+  .imagen5 {
+    @extend .imagen2;
+  }
+
+  @-webkit-keyframes puff-in-center {
     0% {
       -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
       -webkit-filter: blur(4px);
-              filter: blur(4px);
+      filter: blur(4px);
       opacity: 0;
     }
+
     100% {
       -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
       -webkit-filter: blur(0px);
-              filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
     }
   }
+
   @keyframes puff-in-center {
     0% {
       -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
       -webkit-filter: blur(4px);
-              filter: blur(4px);
+      filter: blur(4px);
       opacity: 0;
     }
+
     100% {
       -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
       -webkit-filter: blur(0px);
-              filter: blur(0px);
+      filter: blur(0px);
       opacity: 1;
     }
   }
-  
-    .img2 {
-    
+
+  .img2 {
+
     text-align: center;
     object-fit: contain;
 
-}
+  }
 
-    .img3 {
+  .img3 {
     text-align: center;
-}
+  }
 
-    .img4 {
+  .img4 {
     text-align: center;
-}
+  }
 
-    .img5 {
+  .img5 {
     text-align: center;
-}
-div{
-  padding-bottom: 20px;
-}
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
 }

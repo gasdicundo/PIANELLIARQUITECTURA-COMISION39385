@@ -39,8 +39,6 @@ main {
     border-radius: 10px;
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-  main .imagen5 {
-    box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5); }
 
 @-webkit-keyframes puff-in-center {
   0% {
@@ -188,7 +186,8 @@ form .grupo {
   position: relative;
   margin: 45px; }
 
-input, textarea {
+input,
+textarea {
   background: none;
   color: #c6c6c6;
   font-size: 18px;
@@ -199,13 +198,15 @@ input, textarea {
   border-bottom: 1px solid var(--colorTextos);
   resize: none; }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   color: #5e5d5d; }
 
 input:focus ~ label,
 input:valid ~ label,
-textarea:focus ~ label, textarea:valid ~ label {
+textarea:focus ~ label,
+textarea:valid ~ label {
   position: absolute;
   top: -14px;
   font-size: 12px;
@@ -220,7 +221,8 @@ label {
   transition: 0.5s ease all;
   pointer-events: none; }
 
-input:focus ~ .barra::before, textarea:focus ~ .barra::before {
+input:focus ~ .barra::before,
+textarea:focus ~ .barra::before {
   width: 100%; }
 
 .barra {
@@ -694,27 +696,19 @@ footer {
   main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 350px;
     height: 250px;
-    margin-left: 25px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 25px; }
   main div .imagen3 {
     width: 350px;
     height: 250px;
-    margin-left: 15px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 15px; }
   main div .imagen4 {
     width: 350px;
     height: 250px;
-    margin-left: 25px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 25px; }
   main div .imagen5 {
     width: 350px;
     height: 250px;
-    margin-left: 15px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 15px; }
   footer section .facebook {
     width: 35px;
     position: relative;
@@ -770,27 +764,19 @@ footer {
   main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 450px;
     height: 300px;
-    margin-left: 25px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 25px; }
   main div .imagen3 {
     width: 450px;
     height: 300px;
-    margin-left: -15px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: -15px; }
   main div .imagen4 {
     width: 450px;
     height: 300px;
-    margin-left: 25px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: 25px; }
   main div .imagen5 {
     width: 450px;
     height: 300px;
-    margin-left: -15px;
-    /* margin-left: 50px;
-        padding-top: 20px; */ }
+    margin-left: -15px; }
   footer section .facebook {
     left: 221px;
     top: 33px; }
