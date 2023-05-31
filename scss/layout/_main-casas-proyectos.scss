@@ -1,0 +1,159 @@
+.hero-casa-lucerna{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+body{
+    .main-casa-lucerna{
+    grid-area: main;
+    background-image: url(../../assets/img/casa_lucerna14.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+    
+      
+}
+
+.background{
+    background-color: rgba(255, 255, 255, .7);
+    background-size: cover;
+}
+
+.titulo-casas{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 220px;
+    margin: auto;
+    color: white;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, .5);
+    // margin-top: 20px;
+    top: 20px;
+    // bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.imagenes-casas{
+    display: flex;
+    // margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.imagen-casas{
+    text-align: center;
+    // margin-top: 20px;
+    
+}
+.img-casas{
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, .5);
+    // text-align: center;
+}
+
+.texto-casas{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 90%;
+    margin: auto;
+    
+    // margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.texto-descripcion{
+    text-align: justify;
+    padding: 10px 20px 0px 20px;
+    color: white;
+    margin: auto;
+}
+
+.hero-casa-JS{
+    width: 100%;
+    height: 100vh;
+    @include grid(auto, auto auto auto, "header" "main" "footer");
+}
+
+body{
+    .main-casa-JS{
+    grid-area: main;
+    background-image: url(../../assets/img/casa-js2.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+.hero-casa-OP{
+    width: 100%;
+    height: 100vh;
+    @include grid(auto, auto auto auto, "header" "main" "footer");
+}
+
+body{
+    .main-casa-OP{
+    grid-area: main;
+    background-image: url(../../assets/img/casa-op3.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+.hero-casa-rider{
+    width: 100%;
+    height: 100vh;
+    @include grid(auto, auto auto auto, "header" "main" "footer");
+}
+
+body{
+    .main-casa-rider{
+    grid-area: main;
+    background-image: url(../../assets/img/casa-rider-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+.hero-casa-carilo{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    @include grid(auto, auto auto auto, "header" "main" "footer");
+}
+
+body{
+    .main-casa-carilo{
+    grid-area: main;
+    background-image: url(../../assets/img/casa-carilo-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+.hero-casa-campo{
+    width: 100%;
+    height: 100vh;
+    @include grid(auto, auto auto auto, "header" "main" "footer");
+}
+
+body{
+    .main-casa-campo{
+    grid-area: main;
+    background-image: url(../../assets/img/casa-campo1.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+}
+
+
+

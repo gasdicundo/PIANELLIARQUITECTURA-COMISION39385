@@ -1,22 +1,28 @@
 .proyectos {
     width: 250px;
     height: 200px;
-    padding-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+   
+    // padding-top: 20px;
     webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
 
+
 .card1{
     text-align: center;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .card2{
     text-align: center;
-
-    
+    margin: 0;
+    padding: 0;
 }
+
 @-webkit-keyframes tilt-in-top-1 {
     0% {
       -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
@@ -44,6 +50,118 @@
   
 
 .proyectos:hover{
-    width: 300px;
-    height: 250px;
+    // width: 300px;
+    // height: 250px;
+    box-shadow: 5px 6px 7px 8px black;
+    filter: brightness(20%);
 }
+
+a{
+  text-decoration: none;
+}
+
+.name-casa-lucerna{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.name-casa-js{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  // left: 30%;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.name-casa-op{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.name-casa-rider{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.name-casa-carilo{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.name-casa-campo{
+  color: white;
+  background-color: rgba(0, 0, 0, .3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  // margin-top: 20px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.card-individual{
+  height: 215px;
+}
+
+// .name-casa-lucerna:hover{
+//   top: 150px;
+// }
+
+

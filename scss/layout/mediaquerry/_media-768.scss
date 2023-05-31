@@ -4,7 +4,7 @@
         display: flex;
         flex-direction: row;
         gap: 5px;
-        font-size: 14PX;
+        font-size: 16PX;
     }
     nav{
         div{
@@ -83,11 +83,10 @@
     
 }
     .main-proyectos{
-        padding-top: 50px;
+        // padding-top: 50px;
     
     }
-
-    footer{
+      footer{
         section{
     .facebook {
         width: 35px;
@@ -148,4 +147,18 @@
         line-height: 25px;
     }
     }
-}}
+}
+
+.titulo-casas{
+    width: 270px;
+}
+.img-casas{
+    width: 400px;
+    // text-align: center;
+}
+
+.texto-casas{
+    font-size: 20px;
+}
+
+}

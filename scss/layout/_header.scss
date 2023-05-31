@@ -1,7 +1,7 @@
 header {
     grid-area: header;
     width: 100%;
-    background-color: #BDCDD6;
+    background-color: $header-color;
     
     nav{.navbar2 {
         display: flex;

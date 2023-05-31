@@ -13,43 +13,43 @@ main{
         height: 450px;
     }
 
-    .imagen2:hover{
-        width: 650px;
-        height: 500px;
+    // .imagen2:hover{
+    //     width: 650px;
+    //     height: 500px;
         
-    }
+    // }
 
     .imagen3 {
         width: 600px;
         height: 450px;
     }
 
-    .imagen3:hover{
-        width: 650px;
-        height: 500px;
+    // .imagen3:hover{
+    //     width: 650px;
+    //     height: 500px;
         
-    }
+    // }
 
     .imagen4 {
         width: 600px;
         height: 450px;
     }
 
-    .imagen4:hover{
-        width: 650px;
-        height: 500px;
+    // .imagen4:hover{
+    //     width: 650px;
+    //     height: 500px;
         
-    }
+    // }
 
     .imagen5 {
         width: 600px;
         height: 450px;
     }
-    .imagen5:hover{
-        width: 650px;
-        height: 500px;
+    // .imagen5:hover{
+    //     width: 650px;
+    //     height: 500px;
         
-    }
+    // }
 }
     }
     footer{
@@ -110,11 +110,50 @@ main{
         height: 350px;
         // padding-top: 20px;
     }
-    .proyectos:hover{
-        width: 450px;
-        height: 400px;
+    // .proyectos:hover{
+    //     width: 450px;
+    //     height: 400px;
         
+    // }
+    .name-casa-lucerna{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;
     }
+
+    .name-casa-js{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;
+      }
+      
+      .name-casa-op{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;
+      }
+      
+      .name-casa-rider{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;
+      }
+      
+      .name-casa-carilo{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;
+      }
+      
+      .name-casa-campo{
+        font-size: 30px;
+        width: 250px;
+        top: -330px;       
+      }
+
+      .card-individual{
+        height: 375px;
+      }
 }
 }
 main{
@@ -133,5 +172,19 @@ main{
         font-size: 20px;
     }
 }}
+    }
+    .img-casas{
+        width: 550px;
+        
+    }
+    .titulo-casas{
+        width: 400px;
+    }
+
+    .texto-casas{
+        
+        width: 75%;
+        
+        
     }
 }

@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 main {
   grid-area: main; }
@@ -33,26 +33,14 @@ main {
     font-family: 'Inter', sans-serif;
     flex-flow: row wrap;
     padding-top: 20px; }
-  main .imagen2 {
+  main .imagen2, main .imagen3, main .imagen4, main .imagen5 {
+    box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
     width: 300px;
-    padding-top: 20px;
-    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-  main .imagen3 {
-    width: 300px;
-    padding-top: 20px;
-    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
-  main .imagen4 {
-    width: 300px;
-    padding-top: 20px;
+    border-radius: 10px;
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
     animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
   main .imagen5 {
-    width: 300px;
-    padding-top: 20px;
-    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-    animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+    box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5); }
 
 @-webkit-keyframes puff-in-center {
   0% {
@@ -82,7 +70,8 @@ main {
     filter: blur(0px);
     opacity: 1; } }
   main .img2 {
-    text-align: center; }
+    text-align: center;
+    object-fit: contain; }
   main .img3 {
     text-align: center; }
   main .img4 {
@@ -98,7 +87,7 @@ main .hero-arquitectura {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 main h2 {
   text-align: center;
@@ -117,12 +106,12 @@ main h3 {
   --colorTextos: #49454567; }
 
 .hero-contacto {
-  width: 100%;
-  height: 100vh;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+  width: 100%;
+  height: 100vh; }
 
 .contacto {
   padding-top: 100px;
@@ -132,8 +121,10 @@ main h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #bdcdd6;
-  background: linear-gradient(180deg, #bdcdd6 35%, #8b8b8b 100%); }
+  background-image: url(../../assets/img/casa11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 @keyframes bounce-top {
   0% {
@@ -286,7 +277,7 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 .index-nosotros {
   width: 100%;
@@ -301,7 +292,8 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
   padding-top: 20px; }
 
 .nosotros1 {
-  grid-area: nosotros1; }
+  grid-area: nosotros1;
+  gap: 20px; }
 
 .nosotros2 {
   grid-area: nosotros2; }
@@ -327,15 +319,20 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
 .proyectos {
   width: 250px;
   height: 200px;
-  padding-top: 20px;
+  text-align: center;
+  border-radius: 15px;
   webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .card1 {
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0; }
 
 .card2 {
-  text-align: center; }
+  text-align: center;
+  margin: 0;
+  padding: 0; }
 
 @-webkit-keyframes tilt-in-top-1 {
   0% {
@@ -358,8 +355,226 @@ input:focus ~ .barra::before, textarea:focus ~ .barra::before {
     opacity: 1; } }
 
 .proyectos:hover {
+  box-shadow: 5px 6px 7px 8px black;
+  filter: brightness(20%); }
+
+a {
+  text-decoration: none; }
+
+.name-casa-lucerna {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.name-casa-js {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.name-casa-op {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.name-casa-rider {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.name-casa-carilo {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.name-casa-campo {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 130px;
+  text-align: center;
+  margin: auto;
+  border-radius: 50px;
+  position: relative;
+  top: -180px;
+  left: 0;
+  right: 0;
+  webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-top-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.card-individual {
+  height: 215px; }
+
+.hero-casa-lucerna {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-lucerna {
+  grid-area: main;
+  background-image: url(../../assets/img/casa_lucerna14.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.background {
+  background-color: rgba(255, 255, 255, 0.7);
+  background-size: cover; }
+
+.titulo-casas {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 220px;
+  margin: auto;
+  color: white;
+  box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.5);
+  top: 20px;
+  margin-bottom: 40px; }
+
+.imagenes-casas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0; }
+
+.imagen-casas {
+  text-align: center; }
+
+.img-casas {
+  border-radius: 15px;
   width: 300px;
-  height: 250px; }
+  box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.5); }
+
+.texto-casas {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  width: 90%;
+  margin: auto;
+  text-align: justify; }
+
+.texto-descripcion {
+  text-align: justify;
+  padding: 10px 20px 0px 20px;
+  color: white;
+  margin: auto; }
+
+.hero-casa-JS {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-JS {
+  grid-area: main;
+  background-image: url(../../assets/img/casa-js2.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.hero-casa-OP {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-OP {
+  grid-area: main;
+  background-image: url(../../assets/img/casa-op3.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.hero-casa-rider {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-rider {
+  grid-area: main;
+  background-image: url(../../assets/img/casa-rider-bg.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.hero-casa-carilo {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-carilo {
+  grid-area: main;
+  background-image: url(../../assets/img/casa-carilo-bg.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.hero-casa-campo {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+body .main-casa-campo {
+  grid-area: main;
+  background-image: url(../../assets/img/casa-campo1.jpg);
+  background-position: center;
+  background-size: cover; }
 
 header {
   grid-area: header;
@@ -454,7 +669,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    font-size: 14PX; }
+    font-size: 16PX; }
   header nav div .logo {
     width: 300px; }
   header nav div .logo:hover {
@@ -476,7 +691,7 @@ footer {
     grid-area: img4; }
   main div .img5 {
     grid-area: img5; }
-  main div .imagen2 {
+  main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 350px;
     height: 250px;
     margin-left: 25px;
@@ -500,8 +715,6 @@ footer {
     margin-left: 15px;
     /* margin-left: 50px;
         padding-top: 20px; */ }
-  .main-proyectos {
-    padding-top: 50px; }
   footer section .facebook {
     width: 35px;
     position: relative;
@@ -536,7 +749,13 @@ footer {
     left: 150px;
     top: 5px;
     font-size: 14px;
-    line-height: 25px; } }
+    line-height: 25px; }
+  .titulo-casas {
+    width: 270px; }
+  .img-casas {
+    width: 400px; }
+  .texto-casas {
+    font-size: 20px; } }
 
 @media (min-width: 1024px) {
   header .navbar2 {
@@ -548,7 +767,7 @@ footer {
     gap: 70px;
     justify-content: space-around;
     align-items: center; }
-  main div .imagen2 {
+  main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 450px;
     height: 300px;
     margin-left: 25px;
@@ -596,58 +815,97 @@ footer {
   main section .proyectos {
     width: 300px;
     height: 250px;
-    padding-top: 20px; }
-  main section .proyectos:hover {
-    width: 350px;
-    height: 300px; }
+    margin: 20px; }
   main section .card1 {
     display: flex;
-    gap: 50px;
+    flex-direction: row;
+    gap: 0px;
     margin: auto;
     align-items: center;
     justify-content: center; }
   main section .card2 {
     display: flex;
-    gap: 50px;
+    gap: 0px;
     margin: auto;
     align-items: center;
     justify-content: center; }
+  main section .name-casa-lucerna {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section .name-casa-js {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section .name-casa-op {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section .name-casa-rider {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section .name-casa-carilo {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section .name-casa-campo {
+    font-size: 20px;
+    width: 170px;
+    top: -250px;
+    visibility: hidden; }
+  main section a:hover .name-casa-lucerna {
+    visibility: visible; }
+  main section a:hover .name-casa-js {
+    visibility: visible; }
+  main section a:hover .name-casa-op {
+    visibility: visible; }
+  main section a:hover .name-casa-rider {
+    visibility: visible; }
+  main section a:hover .name-casa-carilo {
+    visibility: visible; }
+  main section a:hover .name-casa-campo {
+    visibility: visible; }
+  main section .card-individual {
+    height: 275px; }
   main .nosotros1 {
     display: flex;
     flex-direction: row; }
   main .nosotros2 {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row; }
+  .titulo-casas {
+    width: 290px; }
+  .imagenes-casas {
+    flex-direction: row;
+    gap: 20px; }
+  .img-casas {
+    width: 450px; }
+  .texto-casas {
+    font-size: 25px; } }
 
 @media (min-width: 1440px) {
   main h1 {
     font-size: 50px; }
   main .parrafo {
     font-size: 20px; }
-  main div .imagen2 {
+  main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 600px;
     height: 450px; }
-  main div .imagen2:hover {
-    width: 650px;
-    height: 500px; }
   main div .imagen3 {
     width: 600px;
     height: 450px; }
-  main div .imagen3:hover {
-    width: 650px;
-    height: 500px; }
   main div .imagen4 {
     width: 600px;
     height: 450px; }
-  main div .imagen4:hover {
-    width: 650px;
-    height: 500px; }
   main div .imagen5 {
     width: 600px;
     height: 450px; }
-  main div .imagen5:hover {
-    width: 650px;
-    height: 500px; }
   footer section .facebook {
     width: 45px;
     left: 351px;
@@ -681,15 +939,44 @@ footer {
   main section .proyectos {
     width: 400px;
     height: 350px; }
-  main section .proyectos:hover {
-    width: 450px;
-    height: 400px; }
+  main section .name-casa-lucerna {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .name-casa-js {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .name-casa-op {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .name-casa-rider {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .name-casa-carilo {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .name-casa-campo {
+    font-size: 30px;
+    width: 250px;
+    top: -330px; }
+  main section .card-individual {
+    height: 375px; }
   main h2 {
     font-size: 40px; }
   main h3 {
     font-size: 30px; }
   main section div .arquitectura {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .img-casas {
+    width: 550px; }
+  .titulo-casas {
+    width: 400px; }
+  .texto-casas {
+    width: 75%; } }
 
 @media (min-width: 2560px) {
   main h1 {
@@ -700,9 +987,9 @@ footer {
     font-size: 50px; }
   main .arquitectura {
     font-size: 40px; }
-  header .navbar {
+  header .navbar2 {
     font-size: 22px; }
-    header .navbar li a:hover {
+    header .navbar2 li a:hover {
       font-size: 26px; }
   main .parrafo {
     font-size: 40px; }
@@ -710,7 +997,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 400px auto auto;
     grid-template-areas: "texto texto" "img2 img3" "img4 img5"; }
-  main div .imagen2 {
+  main div .imagen2, main div .imagen3, main div .imagen4, main div .imagen5 {
     width: 1200px;
     height: 1000px; }
   main div .imagen3 {
@@ -769,10 +1056,35 @@ footer {
   main section .proyectos {
     width: 700px;
     height: 650px; }
-  main section .proyectos:hover {
-    width: 750px;
-    height: 600px; }
-  main section .card1 {
-    gap: 120px; }
-  main section .card2 {
-    gap: 120px; } }
+  main section .card-individual {
+    height: 675px; }
+  main section .name-casa-lucerna {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  main section .name-casa-js {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  main section .name-casa-op {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  main section .name-casa-rider {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  main section .name-casa-carilo {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  main section .name-casa-campo {
+    font-size: 50px;
+    width: 400px;
+    top: -630px; }
+  .img-casas {
+    width: 950px; }
+  .titulo-casas {
+    width: 800px; }
+  .texto-casas {
+    font-size: 45px; } }

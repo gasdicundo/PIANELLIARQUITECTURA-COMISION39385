@@ -17,7 +17,7 @@
     }
 }
 header{
-    .navbar {
+    .navbar2 {
         font-size: 22px;
         li a:hover{
             font-size: 26px;
@@ -143,17 +143,69 @@ main{
         height: 650px;
     }
 
-    .proyectos:hover{
-        width: 750px;
-        height: 600px;
-    }
+    // .proyectos:hover{
+    //     width: 750px;
+    //     height: 600px;
+    // }
 
     .card1{
-        gap: 120px;
+        // gap: 120px;
     }
 
     .card2{
-        gap: 120px;
+        // gap: 120px;
     }
-}}}
+
+    .card-individual{
+        height: 675px;
+      }
+    .name-casa-lucerna{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;
+    }
+
+    .name-casa-js{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;
+      }
+      
+      .name-casa-op{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;
+      }
+      
+      .name-casa-rider{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;
+      }
+      
+      .name-casa-carilo{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;
+      }
+      
+      .name-casa-campo{
+        font-size: 50px;
+        width: 400px;
+        top: -630px;      
+      }
+}}
+.img-casas{
+    width: 950px;
+    
+}
+.titulo-casas{
+    width: 800px;
+}
+
+.texto-casas{
+    font-size: 45px;
+    
+}
+}
 
