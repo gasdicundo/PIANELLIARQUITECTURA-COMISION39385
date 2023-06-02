@@ -458,7 +458,7 @@ a {
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-lucerna {
+.main-casa-lucerna {
   grid-area: main;
   background: url("../assets/img/casa_lucerna14.jpg");
   background-position: center;
@@ -515,7 +515,7 @@ body .main-casa-lucerna {
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-JS {
+.main-casa-JS {
   grid-area: main;
   background: url("../assets/img/casa-js2.jpg");
   background-position: center;
@@ -529,7 +529,7 @@ body .main-casa-JS {
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-OP {
+.main-casa-OP {
   grid-area: main;
   background: url("../assets/img/casa-op3.jpg");
   background-position: center;
@@ -543,7 +543,7 @@ body .main-casa-OP {
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-rider {
+.main-casa-rider {
   grid-area: main;
   background: url("../assets/img/casa-rider-bg.jpg");
   background-position: center;
@@ -558,7 +558,7 @@ body .main-casa-rider {
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-carilo {
+.main-casa-carilo {
   grid-area: main;
   background: url("../assets/img/casa-carilo-bg.jpg");
   background-position: center;
@@ -572,7 +572,7 @@ body .main-casa-carilo {
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
-body .main-casa-campo {
+.main-casa-campo {
   grid-area: main;
   background: url("../assets/img/casa-campo1.jpg");
   background-position: center;
